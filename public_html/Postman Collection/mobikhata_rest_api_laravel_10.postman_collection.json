@@ -1,0 +1,737 @@
+{
+	"info": {
+		"_postman_id": "93c4845d-1e98-48f3-8919-e38d059f0c38",
+		"name": "mobikhata_rest_api_laravel_10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Public Operations",
+			"item": [
+				{
+					"name": "For User",
+					"item": [
+						{
+							"name": "Athetication",
+							"item": [
+								{
+									"name": "OTP Code Done",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "key=AAAAd71hY5Y:APA91bEavryJcEeOlujaQqKBtijkLRNvw0VdeiW6hyOuqlYJe9sTE_LdqcgUzMwJzLVp8cTGInECUiJKzmKPr3gz5EuXKwgsPOwaMJBv01aSIxUsXQ4XWY6tAxPicPLn2P400a7RRnvV"
+											}
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "phone_number",
+													"value": "+8801795247777",
+													"type": "default"
+												},
+												{
+													"key": "password",
+													"value": "mobikhataindia",
+													"type": "text"
+												}
+											]
+										},
+										"url": "{{url}}/user/otpCodeDone"
+									},
+									"response": []
+								},
+								{
+									"name": "Google Login",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "key=AAAAd71hY5Y:APA91bEavryJcEeOlujaQqKBtijkLRNvw0VdeiW6hyOuqlYJe9sTE_LdqcgUzMwJzLVp8cTGInECUiJKzmKPr3gz5EuXKwgsPOwaMJBv01aSIxUsXQ4XWY6tAxPicPLn2P400a7RRnvV"
+											}
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "first_name",
+													"value": "Sudipta007",
+													"type": "default"
+												},
+												{
+													"key": "last_name",
+													"value": "Malaker007",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "malakersudipta007@gmail.com",
+													"type": "default"
+												},
+												{
+													"key": "password",
+													"value": "mobikhataindia",
+													"type": "text"
+												}
+											]
+										},
+										"url": "{{url}}/user/googleLogin"
+									},
+									"response": []
+								},
+								{
+									"name": "Register",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "key=AAAAd71hY5Y:APA91bEavryJcEeOlujaQqKBtijkLRNvw0VdeiW6hyOuqlYJe9sTE_LdqcgUzMwJzLVp8cTGInECUiJKzmKPr3gz5EuXKwgsPOwaMJBv01aSIxUsXQ4XWY6tAxPicPLn2P400a7RRnvV"
+											}
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "first_name",
+													"value": "Sudipta0012",
+													"type": "default"
+												},
+												{
+													"key": "last_name",
+													"value": "Malaker0012",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "malakersudipta0011@gmail.com",
+													"type": "default"
+												},
+												{
+													"key": "password",
+													"value": "12345",
+													"type": "text"
+												},
+												{
+													"key": "confirmation_password",
+													"value": "12345",
+													"type": "default"
+												}
+											]
+										},
+										"url": "{{url}}/user/register"
+									},
+									"response": []
+								},
+								{
+									"name": "Login",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "key=AAAAd71hY5Y:APA91bEavryJcEeOlujaQqKBtijkLRNvw0VdeiW6hyOuqlYJe9sTE_LdqcgUzMwJzLVp8cTGInECUiJKzmKPr3gz5EuXKwgsPOwaMJBv01aSIxUsXQ4XWY6tAxPicPLn2P400a7RRnvV"
+											}
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "email",
+													"value": "malakersudipta007@gmail.com",
+													"type": "default"
+												},
+												{
+													"key": "password",
+													"value": "12345",
+													"type": "text"
+												}
+											]
+										},
+										"url": "{{url}}/user/login"
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Protected Operations",
+			"item": [
+				{
+					"name": "For User",
+					"item": [
+						{
+							"name": "Athetication",
+							"item": [
+								{
+									"name": "Logout",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "19|sUYROzM0Cm7MSJ40GqyF3pTIAIZi7zMABU270urF"
+											}
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": "{{url}}/user/logout"
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Business Card",
+							"item": [
+								{
+									"name": "Get Business Card",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "7|hCyqQZx0nONxpF6FVRqmYealybvaPwEMKuYkfkLj"
+											}
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": "{{url}}/user/getBusinessCard"
+									},
+									"response": []
+								},
+								{
+									"name": "Update Business Card",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "7|hCyqQZx0nONxpF6FVRqmYealybvaPwEMKuYkfkLj"
+											}
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "business_name",
+													"value": "Sudipta7 Malaker7",
+													"type": "default"
+												},
+												{
+													"key": "phone_number",
+													"value": "01795242382",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "malakersudipta07@gmail.com",
+													"type": "default"
+												},
+												{
+													"key": "business_address",
+													"value": "business address is here",
+													"type": "default"
+												}
+											]
+										},
+										"url": "{{url}}/user/updateBusinessCard"
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Transaction Information",
+							"item": [
+								{
+									"name": "Get Transaction Information",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "1|ctIoma1tE26JS3OgHXzh2rEya6bjYDPx8OthVw6x"
+											}
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": "{{url}}/user/getTransactionInformation"
+									},
+									"response": []
+								},
+								{
+									"name": "Get Report of Transaction Information",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "5|rLIfzCfmyLdv9p1xPSKU7e9Vx88aZzPz1hANTeC8"
+											}
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "{{url}}/user/getReportOfTransactionInformation",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user",
+												"getReportOfTransactionInformation"
+											],
+											"query": [
+												{
+													"key": "from_date",
+													"value": "2023-06-18",
+													"disabled": true
+												},
+												{
+													"key": "to_date",
+													"value": "2023-06-19",
+													"disabled": true
+												},
+												{
+													"key": "all_money",
+													"value": "true",
+													"disabled": true
+												},
+												{
+													"key": "take_money",
+													"value": "true",
+													"disabled": true
+												},
+												{
+													"key": "give_money",
+													"value": "true",
+													"disabled": true
+												},
+												{
+													"key": "name_or_amount",
+													"value": "2",
+													"disabled": true
+												},
+												{
+													"key": "order_by_select_box",
+													"value": "name_a_to_z",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Transaction Details",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "3|efjTlgiXbFpTzj7fz47nlzNC2LKjo6i9ELCU6piP"
+											}
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "{{url}}/user/getTransactionDetails?transaction_id=2",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"user",
+												"getTransactionDetails"
+											],
+											"query": [
+												{
+													"key": "transaction_id",
+													"value": "2"
+												},
+												{
+													"key": "money_amount",
+													"value": "4",
+													"disabled": true
+												},
+												{
+													"key": "from_date",
+													"value": "2023-06-25",
+													"disabled": true
+												},
+												{
+													"key": "to_date",
+													"value": "2023-06-25",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Unique Customers Name",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "5|rLIfzCfmyLdv9p1xPSKU7e9Vx88aZzPz1hANTeC8"
+											}
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": "{{url}}/user/getUniqueCustomersName"
+									},
+									"response": []
+								},
+								{
+									"name": "Take Money",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "1|ctIoma1tE26JS3OgHXzh2rEya6bjYDPx8OthVw6x"
+											}
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "customer_name",
+													"value": "Pranta Malaker",
+													"type": "default"
+												},
+												{
+													"key": "take_money",
+													"value": "50000",
+													"type": "text"
+												},
+												{
+													"key": "phone_number",
+													"value": "+8801795242983",
+													"type": "text"
+												},
+												{
+													"key": "note",
+													"value": "",
+													"type": "text"
+												},
+												{
+													"key": "date",
+													"value": "2023-06-18",
+													"type": "text"
+												}
+											]
+										},
+										"url": "{{url}}/user/takeMoney"
+									},
+									"response": []
+								},
+								{
+									"name": "Give Money",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "1|ctIoma1tE26JS3OgHXzh2rEya6bjYDPx8OthVw6x"
+											}
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "customer_name",
+													"value": "Robin Malaker",
+													"type": "default"
+												},
+												{
+													"key": "give_money",
+													"value": "3000",
+													"type": "text"
+												},
+												{
+													"key": "phone_number",
+													"value": "+8801795242999",
+													"type": "text"
+												},
+												{
+													"key": "note",
+													"value": "note",
+													"type": "text"
+												},
+												{
+													"key": "date",
+													"value": "2023-06-19",
+													"type": "text"
+												}
+											]
+										},
+										"url": "{{url}}/user/giveMoney"
+									},
+									"response": []
+								},
+								{
+									"name": "Update Take Money",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "1|ctIoma1tE26JS3OgHXzh2rEya6bjYDPx8OthVw6x"
+											}
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "return_take_money",
+													"value": "10000",
+													"type": "text"
+												},
+												{
+													"key": "transaction_information_id",
+													"value": "3",
+													"type": "default"
+												}
+											]
+										},
+										"url": "{{url}}/user/updateTakeMoney"
+									},
+									"response": []
+								},
+								{
+									"name": "Update Give Money",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "1|ctIoma1tE26JS3OgHXzh2rEya6bjYDPx8OthVw6x"
+											}
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "received_give_money",
+													"value": "1000",
+													"type": "text"
+												},
+												{
+													"key": "transaction_information_id",
+													"value": "4",
+													"type": "default"
+												}
+											]
+										},
+										"url": "{{url}}/user/updateGiveMoney"
+									},
+									"response": []
+								},
+								{
+									"name": "Delete Single Transaction Information",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "14|7dZdZ0mpxLP9Bty7UUcM6C08jTsGT28DW1TuC1BC"
+											}
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "transaction_information_id",
+													"value": "6",
+													"type": "default"
+												}
+											]
+										},
+										"url": "{{url}}/user/deleteSingleTransactionInformation"
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000/api",
+			"type": "string"
+		}
+	]
+}
